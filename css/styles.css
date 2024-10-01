@@ -9,7 +9,13 @@ a {
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -24,10 +30,10 @@ ul {
 img {
   display: block;
 }
-
+/* Header */
 header {
   box-sizing: border-box;
-  border-bottom: 1px solid #E7E9FC;
+  border-bottom: 1px solid #e7e9fc;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
@@ -36,15 +42,12 @@ header {
 .container {
   width: 1158px;
   max-width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-
 .nav-list {
-  margin-left: 156px;
+  margin-right: auto;
   display: flex;
   align-items: center;
 }
@@ -88,8 +91,7 @@ header {
 
 .header-features-list:hover,
 .header-features-list:focus,
-.header-features-list:active
-{
+.header-features-list:active {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -99,8 +101,9 @@ header {
 }
 
 .header-container {
-  display: flex; 
+  display: flex;
   align-items: center;
+  height: 72px;
 }
 
 .address-box {
@@ -111,6 +114,8 @@ header {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  display: flex;
+  gap: 40px;
 }
 
 .address-list {
@@ -120,7 +125,6 @@ header {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-right: 40px;
 }
 
 .address-list:hover {
@@ -133,8 +137,7 @@ header {
 }
 
 .address-list:active,
-.address-list:focus
- {
+.address-list:focus {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -143,9 +146,13 @@ header {
   color: #404bbf;
 }
 
+/* Main */
 .main-container {
   background-color: #2e2f42;
   margin-top: 0;
+  height: 600px;
+  display: block;
+  flex-direction: column;
 }
 
 .main-title {
@@ -155,7 +162,9 @@ header {
   line-height: 107%;
   letter-spacing: 0.02em;
   color: #fff;
-  text-align: center;
+  width: 496px;
+  padding-top: 188px;
+  margin: 0 auto;
 }
 
 .main-button {
@@ -164,8 +173,16 @@ header {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
   border: none;
   cursor: pointer;
+  margin: 48px auto;
+  
 }
 
 .main-button:hover,
