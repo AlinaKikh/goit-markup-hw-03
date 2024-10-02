@@ -2,9 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
-  min-height: 100vh
-  display: flex;
-  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
@@ -57,6 +55,7 @@ header {
   margin-right: auto;
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 .logo-first {
   font-family: "Raleway", sans-serif;
@@ -66,6 +65,7 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-second {
@@ -80,7 +80,6 @@ header {
 
 .header-features {
   width: 261px;
-  margin-left: 76px;
   display: flex;
   justify-content: space-between;
 }
@@ -94,6 +93,7 @@ header {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .header-features-list:hover,
@@ -160,6 +160,7 @@ header {
   height: 600px;
   display: block;
   flex-direction: column;
+  padding-top: 188px;
 }
 
 .main-title {
@@ -169,8 +170,7 @@ header {
   line-height: 107%;
   letter-spacing: 0.02em;
   color: #fff;
-  width: 496px;
-  padding-top: 188px;
+  max-width: 496px;
   margin: 0 auto;
 }
 
@@ -181,7 +181,7 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -199,17 +199,29 @@ header {
 /* Features - section 2 */
 .features-container {
   height: 344px;
+  padding: 120px 0;
   display: flex;
-  flex-direction: inline;
   align-items: center;
   gap: 24px;
-  width: calc=((100% - 72px) / 4);
 }
 
 .features-box {
   margin: 0;
   width: 264px;
   height: 98px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-title {
@@ -235,7 +247,7 @@ header {
 .team-container {
   background-color: #f4f4fd;
   height: 732px;
-  display: column;
+  padding: 120px 0;
 }
 
 .team-title {
@@ -247,18 +259,17 @@ header {
   line-height: 111%;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .wrapper {
   display: flex;
-  width: calc=((100% - 72px) / 4);
+  gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
 
 .team-item {
   background-color: #ffffff;
-  margin-right: 24px;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -266,13 +277,11 @@ header {
 }
 
 .team-box {
-  height: 88px;
-  display: column;
   align-items: center;
+  padding: 32px 0;
 }
 
 .team-item-title {
-  margin-top: 32px;
   margin-bottom: 8px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -296,6 +305,7 @@ header {
 /* Portfolio - section 4 */
 .portfolio-container {
   background-color: #fff;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -308,21 +318,20 @@ header {
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
-  padding-top: 120px;
+  margin-bottom: 72px
 }
 
 .portfolio-box {
-  padding-top: 72px;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   align-content: normal;
 }
 
 .portfolio-box-item {
   height: 120px;
-  display: column;
-  gap: 8px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -335,7 +344,7 @@ header {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .portfolio-item-decription {
@@ -345,17 +354,18 @@ header {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-top: 8px;
 }
 
 /* Footer */
 .footer-container {
   background-color: #2e2f42;
   height: 312px;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 
 .logo-third {
   font-family: "Raleway", sans-serif;
@@ -365,6 +375,8 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-fourth {
@@ -384,6 +396,5 @@ header {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding-top: 16px;
   width: 264px;
 }
