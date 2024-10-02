@@ -36,7 +36,7 @@ img {
   display: block;
 }
 /* Header */
-header {
+.header {
   box-sizing: border-box;
   border-bottom: 1px solid #e7e9fc;
   margin-top: 0;
@@ -55,7 +55,6 @@ header {
   margin-right: auto;
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 .logo-first {
   font-family: "Raleway", sans-serif;
@@ -81,11 +80,11 @@ header {
 .header-features {
   width: 261px;
   display: flex;
+  gap: 40px;
   justify-content: space-between;
 }
 
 .header-features-list {
-  margin-right: 40px;
   margin-top: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -160,7 +159,7 @@ header {
   height: 600px;
   display: block;
   flex-direction: column;
-  padding-top: 188px;
+  padding: 188px 0;
 }
 
 .main-title {
@@ -197,9 +196,11 @@ header {
 }
 
 /* Features - section 2 */
-.features-container {
-  height: 344px;
+.features-section {
   padding: 120px 0;
+}
+
+.features-container {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -265,7 +266,7 @@ header {
 .wrapper {
   display: flex;
   gap: 24px;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .team-item {
@@ -303,10 +304,13 @@ header {
 }
 
 /* Portfolio - section 4 */
-.portfolio-container {
-  background-color: #fff;
+
+.portfolio-section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.portfolio-container {
+  background-color: #fff;
 }
 
 .portfolio-title {
@@ -318,7 +322,7 @@ header {
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 72px
+  margin-bottom: 72px;
 }
 
 .portfolio-box {
