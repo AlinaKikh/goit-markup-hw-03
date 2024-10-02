@@ -2,6 +2,13 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
+  min-height: 100vh
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 a {
@@ -227,6 +234,8 @@ header {
 /* Team - section 3 */
 .team-container {
   background-color: #f4f4fd;
+  height: 732px;
+  display: column;
 }
 
 .team-title {
@@ -238,10 +247,28 @@ header {
   line-height: 111%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.wrapper {
+  display: flex;
+  width: calc=((100% - 72px) / 4);
 }
 
 .team-item {
   background-color: #ffffff;
+  margin-right: 24px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+
+.team-box {
+  height: 88px;
+  display: column;
+  align-items: center;
 }
 
 .team-item-title {
@@ -253,6 +280,7 @@ header {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
 }
 
 .team-item-description {
@@ -262,10 +290,13 @@ header {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
 }
 
+/* Portfolio - section 4 */
 .portfolio-container {
   background-color: #fff;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -277,6 +308,24 @@ header {
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
+  padding-top: 120px;
+}
+
+.portfolio-box {
+  padding-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-content: normal;
+}
+
+.portfolio-box-item {
+  height: 120px;
+  display: column;
+  gap: 8px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 
 .portfolio-item-title {
@@ -286,6 +335,7 @@ header {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
 }
 
 .portfolio-item-decription {
@@ -297,9 +347,15 @@ header {
   color: #434455;
 }
 
+/* Footer */
 .footer-container {
   background-color: #2e2f42;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 .logo-third {
   font-family: "Raleway", sans-serif;
@@ -328,4 +384,6 @@ header {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  padding-top: 16px;
+  width: 264px;
 }
